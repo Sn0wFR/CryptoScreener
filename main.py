@@ -53,9 +53,19 @@ class PriceMenu(tk.Frame):
         tk.Frame.__init__(self, parent)
         btn_btc = tk.Button(self, text="Bitcoin \"BTC\"", command=lambda : controller.show_print_menu(
             tk.Label(controller, text=controller.get_price("bitcoin"), font=("Arial", 40), fg="black"),
+            tk.Label(controller, text=controller.get_24h_change("bitcoin"), font=("Arial", 40), fg="black")
+        ))
+        btn_eth = tk.Button(self, text="Ethereum \"ETH\"", command=lambda: controller.show_print_menu(
+            tk.Label(controller, text=controller.get_price("ethereum"), font=("Arial", 40), fg="black"),
             tk.Label(controller, text=controller.get_24h_change("ethereum"), font=("Arial", 40), fg="black")
         ))
+        btn_aca = tk.Button(self, text="Acala Token \"ACA\"", command=lambda: controller.show_print_menu(
+            tk.Label(controller, text=controller.get_price("acala"), font=("Arial", 40), fg="black"),
+            tk.Label(controller, text=controller.get_24h_change("acala"), font=("Arial", 40), fg="black")
+        ))
         btn_btc.pack()
+        btn_eth.pack()
+        btn_aca.pack()
 
 class PrintMenu(tk.Frame):
     def __init__(self, *args, parent):
