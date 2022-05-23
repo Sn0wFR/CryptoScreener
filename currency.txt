@@ -1,0 +1,6 @@
+bitcoin
+ethereum
+acala
+chainlink
+cosmos
+eos
