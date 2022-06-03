@@ -1,5 +1,11 @@
 # CryptoScreener
 
+<h3>V1.2.0</h3>
+
+Added:
+  + Wallet Menu
+  + Transaction Menu  
+
 <h3>V1.1.0</h3>
 
 Added:
